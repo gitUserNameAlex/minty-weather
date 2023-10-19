@@ -6,7 +6,7 @@ const StartBtn = () => {
 		<div className='top-75vh absolute inset-0 m-auto w-60'>
 			<Link
 				to='/weather-info'
-				className='flex justify-center rounded-xl bg-orangeRed py-4 text-xl font-normal text-white shadow-xl shadow-bgSquare/25 transition-transform duration-200 ease-in-out hover:scale-[1.02]'
+				className='flex justify-center rounded-xl bg-btnViolet py-4 text-xl text-white shadow-xl shadow-colorPink/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]'
 				href=''
 			>
 				Get started

@@ -29,7 +29,7 @@ const Wind = () => {
 	}
 
 	return (
-		<div className=' flex gap-2'>
+		<div className=' max-w-xs w-full flex gap-2'>
 			<div>
 					<img alt='' src={windicon} />
 			</div>

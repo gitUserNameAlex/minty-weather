@@ -30,8 +30,10 @@ const WeatherCondition = () => {
 
 
   return (
-		<div className=' flex justify-between items-center gap-2'>
-			<div><img alt='' src={currIcon} /></div>
+		<div className=' max-w-xs w-full flex items-center gap-2'>
+			<div>
+				<img alt='' src={currIcon} />
+			</div>
 			<div>{currWeather.toString()}</div>
 		</div>
 	)

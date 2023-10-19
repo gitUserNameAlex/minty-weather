@@ -29,7 +29,7 @@ const Degrees = () => {
 	}
 
 	return (
-		<div className=' flex'>
+		<div className=' max-w-xs w-full flex gap-2'>
 			<div>
 				<img alt='' src={tempicon} />
 			</div>

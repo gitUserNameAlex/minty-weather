@@ -22,11 +22,11 @@ const Sunset = () => {
 	}
 
 	return (
-		<div className=' flex gap-2'>
-		 <div>
-		 <img alt='' src={sunseticon}/>
-		 </div>
-			<div className=' text-center text-white text-2xl pt-6'>
+		<div className=' max-w-xs w-full flex gap-2'>
+			<div>
+				<img alt='' src={sunseticon} />
+			</div>
+			<div className=' text-center text-2xl pt-6'>
 				<h1>Sunset: {currSunset.toString()}</h1>
 			</div>
 		</div>

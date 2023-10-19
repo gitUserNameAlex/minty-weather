@@ -65,7 +65,7 @@
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	background: rgb(190 242 100);
+	background: rgb(255 82 164);
 	animation: animate 25s linear infinite;
 	bottom: -150px;
 }

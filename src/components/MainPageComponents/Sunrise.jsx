@@ -22,11 +22,11 @@ const Sunrise = () => {
 	}
 
 	return (
-		<div className=' flex gap-2'>
+		<div className=' max-w-xs w-full flex gap-2'>
 			<div>
 				<img alt='' src={sunriseicon} />
 			</div>
-			<div className=' text-center text-white text-2xl pt-6'>
+			<div className=' text-center text-2xl pt-6'>
 				<h1>Sunrise: {currSunrise.toString()}</h1>
 			</div>
 		</div>

@@ -35,11 +35,11 @@ const AirQuality = () => {
 	}
 
 	return (
-		<div className=' flex items-center gap-2'>
+		<div className=' max-w-xs w-full flex items-start gap-2'>
 			<div>
-				<img alt='' src={airicon}/>
+				<img alt='' src={airicon} />
 			</div>
-			<div className=' flex gap-2 text-center text-white text-2xl pt-6'>
+			<div className=' flex gap-2 text-center text-2xl pt-6'>
 				<div>Air quality:</div>
 				<div className=' text-left'>
 					<ul>

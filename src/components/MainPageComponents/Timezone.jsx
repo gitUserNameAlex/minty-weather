@@ -25,7 +25,7 @@ const Timezone = () => {
 
 
   return (
-    <div className=' text-center text-white text-4xl pt-12'>
+    <div className=' text-center text-4xl pt-12'>
       <h1>{currTimezone.toString()}</h1>
     </div>
   )

@@ -1,4 +1,3 @@
-//fix colors(names),classes
 //maybe optimize fetching
 
 import React from 'react'

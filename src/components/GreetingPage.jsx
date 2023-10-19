@@ -7,9 +7,8 @@ const Greeting = () => {
 		<div className=' font-Kanit'>
 			<BgAnimation />
 
-			
 			<div className='w-full absolute top-50vh'>
-				<h1 className=' text-center text-5xl text-white font-normal'>
+				<h1 className=' text-center text-5xl'>
 					Welcome on MintyWeather
 				</h1>
 			</div>

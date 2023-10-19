@@ -4,13 +4,15 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				NunitoSans: ['Nunito Sans, sans-serif'],
 				Kanit: ['Kanit, sans-serif'],
 			},
 
 			colors: {
-				bgSquare: '#bef264',
-				orangeRed: '#FF4500',
+				btnViolet: '#C422FE',
+				colorPink: '#FF52A4',
+				yellowTop: '#A68F08',
+				yellowMiddle: '#FFDE19',
+				yellowBottom: '#FFED81',
 			},
 
 			spacing: {

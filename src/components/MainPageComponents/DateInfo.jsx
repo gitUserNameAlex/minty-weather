@@ -21,7 +21,7 @@ const DateInfo = () => {
 	}
 
 	return (
-		<div className=' text-center text-white text-2xl pt-6'>
+		<div className=' text-center text-2xl pt-6'>
 			<h1>{currDate.toString()}</h1>
 		</div>
 	)
