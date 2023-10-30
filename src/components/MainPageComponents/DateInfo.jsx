@@ -17,6 +17,7 @@ const DateInfo = () => {
 			)
 				.then(res => res.json())
 				.then(data => setCurrDate(data.forecast.forecastday[0].date))
+				.catch(e => console.log(e))
 		})
 	}
 

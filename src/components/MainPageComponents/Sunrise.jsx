@@ -17,7 +17,10 @@ const Sunrise = () => {
 				`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
 			)
 				.then(res => res.json())
-				.then(data => setCurrSunrise(data.forecast.forecastday[0].astro.sunrise))
+				.then(data =>
+					setCurrSunrise(data.forecast.forecastday[0].astro.sunrise)
+				)
+				.catch(e => console.log(e))
 		})
 	}
 

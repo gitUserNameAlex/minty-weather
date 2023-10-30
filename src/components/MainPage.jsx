@@ -7,7 +7,6 @@ import Degrees from './MainPageComponents/Degrees'
 import Wind from './MainPageComponents/Wind'
 import Sunrise from './MainPageComponents/Sunrise'
 import Sunset from './MainPageComponents/Sunset'
-import AirQuality from './MainPageComponents/AirQuality'
   
 const MainPage = () => {
   return (
@@ -23,7 +22,6 @@ const MainPage = () => {
 				<Degrees />
 				<Sunrise />
 				<Wind />
-				<AirQuality />
 			</div>
 		</div>
 	)

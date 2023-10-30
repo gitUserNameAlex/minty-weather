@@ -18,6 +18,7 @@ const Sunset = () => {
 			)
 				.then(res => res.json())
 				.then(data => setCurrSunset(data.forecast.forecastday[0].astro.sunset))
+				.catch(e => console.log(e))
 		})
 	}
 

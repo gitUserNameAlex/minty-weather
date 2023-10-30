@@ -1,3 +1,5 @@
+//cause of API free trial ending cannot use this component((((((
+
 import React, { useEffect, useState } from 'react'
 import airicon from '../../icons/airicon.png'
 
@@ -18,19 +20,13 @@ const AirQuality = () => {
 
 			fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`)
 				.then(res => res.json())
-				.then(data => setCurrCO(data.current.air_quality.co))
-
-            fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`)
-				.then(res => res.json())
-				.then(data => setCurrNO2(data.current.air_quality.no2))
-
-        	fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`)
-				.then(res => res.json())
-				.then(data => setCurrO3(data.current.air_quality.o3))
-
-            fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`)
-				.then(res => res.json())
-				.then(data => setCurrSO2(data.current.air_quality.so2))
+				.then(data => {
+					setCurrCO(data.current.air_quality.co)
+					setCurrNO2(data.current.air_quality.no2)
+					setCurrO3(data.current.air_quality.o3)
+					setCurrSO2(data.current.air_quality.so2)
+				})
+				.catch(e => console.log(e))
 		})
 	}
 

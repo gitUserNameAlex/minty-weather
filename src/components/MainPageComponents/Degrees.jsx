@@ -18,13 +18,11 @@ const Degrees = () => {
 				`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
 			)
 				.then(res => res.json())
-				.then(data => setCurrDegrees(data.current.temp_c))
-
-			fetch(
-				`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
-			)
-				.then(res => res.json())
-				.then(data => setCurrFeels(data.current.feelslike_c))
+				.then(data => {
+					setCurrDegrees(data.current.temp_c)
+					setCurrFeels(data.current.feelslike_c)
+				})
+				.catch(e => console.log(e))
 		})
 	}
 

@@ -19,6 +19,7 @@ const Timezone = () => {
 						)
 							.then(res => res.json())
 							.then(data => setCurrTimezone(data.location.tz_id))
+							.catch(e => console.log(e))
 
         })
     }

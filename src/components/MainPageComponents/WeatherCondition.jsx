@@ -18,13 +18,11 @@ const WeatherCondition = () => {
 					`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
 				)
 					.then(res => res.json())
-					.then(data => setCurrWeather(data.current.condition.text))
-
-                fetch(
-					`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
-				)
-					.then(res => res.json())
-					.then(data => setCurrIcon(data.current.condition.icon))
+					.then(data => {
+						setCurrWeather(data.current.condition.text)
+						setCurrIcon(data.current.condition.icon)
+					})
+					.catch(e => console.log(e))
 			})
 		}
 

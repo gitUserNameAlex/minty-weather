@@ -14,17 +14,16 @@ const Wind = () => {
 			const { latitude, longitude } = position.coords
 			const API_KEY = '18a5bda0b862417c9aa121847231210'
 
-			fetch(
-				`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
-			)
-				.then(res => res.json())
-				.then(data => setCurrSpeed(data.current.wind_kph))
 
 			fetch(
 				`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
 			)
 				.then(res => res.json())
-				.then(data => setCurrDirection(data.current.wind_dir))
+				.then(data => {
+					setCurrDirection(data.current.wind_dir)
+					setCurrSpeed(data.current.wind_kph)
+				})
+				.catch(e => console.log(e))
 		})
 	}
 
