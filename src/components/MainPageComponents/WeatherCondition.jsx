@@ -1,7 +1,6 @@
 import React from 'react'
 
 const WeatherCondition = ({conditionData}) => {
-	console.log(conditionData)
   return (
 		<div className=' max-w-xs w-full flex items-center gap-2'>
 			<div>

@@ -22,7 +22,7 @@ const getWeatherData = () => {
 		const API_KEY = '18a5bda0b862417c9aa121847231210'
 
 		fetch(
-			`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
+			`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`
 		)
 			.then(res => res.json())
 			.then((data) => setWeatherData(data))
