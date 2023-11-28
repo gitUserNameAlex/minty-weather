@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/minty-weather/static/css/main.1207eb9a.css",
-    "main.js": "/minty-weather/static/js/main.9fef5ae0.js",
+    "main.js": "/minty-weather/static/js/main.7056157b.js",
     "index.html": "/minty-weather/index.html",
     "main.1207eb9a.css.map": "/minty-weather/static/css/main.1207eb9a.css.map",
-    "main.9fef5ae0.js.map": "/minty-weather/static/js/main.9fef5ae0.js.map"
+    "main.7056157b.js.map": "/minty-weather/static/js/main.7056157b.js.map"
   },
   "entrypoints": [
     "static/css/main.1207eb9a.css",
-    "static/js/main.9fef5ae0.js"
+    "static/js/main.7056157b.js"
   ]
 }
