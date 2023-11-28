@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/minty-weather/static/css/main.1207eb9a.css",
+    "main.js": "/minty-weather/static/js/main.7651eac2.js",
+    "index.html": "/minty-weather/index.html",
+    "main.1207eb9a.css.map": "/minty-weather/static/css/main.1207eb9a.css.map",
+    "main.7651eac2.js.map": "/minty-weather/static/js/main.7651eac2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1207eb9a.css",
+    "static/js/main.7651eac2.js"
+  ]
+}
