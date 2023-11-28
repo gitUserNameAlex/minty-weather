@@ -1,35 +1,7 @@
-//cause of API free trial ending cannot use this component((((((
-
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import airicon from '../../icons/airicon.png'
 
-const AirQuality = () => {
-	const [currCO, setCurrCO] = useState({})
-    const [currNO2, setCurrNO2] = useState({})
-    const [currO3, setCurrO3] = useState({})
-    const [currSO2, setCurrSO2] = useState({})
-
-	useEffect(() => {
-		getAirQuality()
-	}, [])
-
-	const getAirQuality = () => {
-		navigator.geolocation.getCurrentPosition(position => {
-			const { latitude, longitude } = position.coords
-			const API_KEY = '18a5bda0b862417c9aa121847231210'
-
-			fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${latitude} ${longitude}&days=1&aqi=yes&alerts=no`)
-				.then(res => res.json())
-				.then(data => {
-					setCurrCO(data.current.air_quality.co)
-					setCurrNO2(data.current.air_quality.no2)
-					setCurrO3(data.current.air_quality.o3)
-					setCurrSO2(data.current.air_quality.so2)
-				})
-				.catch(e => console.log(e))
-		})
-	}
-
+const AirQuality = ({airData}) => {
 	return (
 		<div className=' max-w-xs w-full flex items-start gap-2'>
 			<div>
@@ -39,10 +11,10 @@ const AirQuality = () => {
 				<div>Air quality:</div>
 				<div className=' text-left'>
 					<ul>
-						<li>CO: {currCO.toString()}</li>
-						<li>NO2: {currNO2.toString()}</li>
-						<li>O3: {currO3.toString()}</li>
-						<li>SO2: {currSO2.toString()}</li>
+						{airData && <li>CO: {airData.current.air_quality.co}</li>}
+						{airData && <li>NO2: {airData.current.air_quality.no2}</li>}
+						{airData && <li>O3: {airData.current.air_quality.o3}</li>}
+						{airData && <li>SO2: {airData.current.air_quality.so2}</li>}
 					</ul>
 				</div>
 			</div>
